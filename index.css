@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/windows-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.folder-grid {
+    width: 40vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    gap: 10px;
+    box-sizing: content-box;
+}
+
+a {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.folder-image {
+    width: 6vw;
+    margin: auto;
+    margin-left: -1vw;
+}
+
+.folder-image:hover {
+    content: url("/open-folder.png");
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 2vw;
+    width: 100%;
+    background: blue;
+}
