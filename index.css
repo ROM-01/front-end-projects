@@ -1,5 +1,8 @@
 body, html {
     margin: 0;
+    overflow-y: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: -2;
 }
 
 .background {
@@ -9,24 +12,30 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    z-index: -2;
 }
+
 
 .folder-grid {
     width: 40vw;
-    height: 95vh;
+    height: 90vh;
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 8vw);
     gap: 10px;
     box-sizing: content-box;
+    padding-left: 1vw;
 }
 
 a {
+    width: 4vw;
+    height: 7vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    color: aliceblue;
+    color: rgb(240, 240, 240);
+    text-shadow: 2px 2px black;
     text-decoration: none;
+    word-break: break-all;
     font-weight: 400;
     font-size: 1vw;
 }
@@ -34,7 +43,7 @@ a {
 .folder-image {
     width: 6vw;
     margin: auto;
-    margin-left: -1vw;
+    margin: -1vw;
 }
 
 .folder-image:hover {
@@ -43,8 +52,75 @@ a {
 
 footer {
     position: fixed;
+    display: flex;
+    flex-direction: row;
     bottom: 0;
-    height: 2vw;
+    height: 2.3vw;
     width: 100%;
-    background: blue;
+    background: linear-gradient(
+        rgb(0, 32, 87),
+        rgb(74, 138, 250),
+        rgb(42, 82, 202),
+        rgb(40, 84, 217),
+        rgb(61, 104, 232),
+        rgb(56, 95, 215));
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 6.2vw;
+    background: linear-gradient(
+        rgb(0, 98, 0),
+        rgb(152, 205, 166),
+        rgb(0, 172, 0),
+        rgb(0, 172, 0), 
+        rgb(0, 172, 0), 
+        rgb(0, 81, 0));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1vw;
+    text-shadow: 3px 1px black;
+    text-align: center;
+    box-sizing: content-box;
+    padding-left: 4px;
+    padding-top: 11px;
+}
+
+.logo-img {
+    font-size: 1.3vw;
+    text-shadow: 2px 1px black;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 3px;
+}
+
+.time {
+    height: 100%;
+    width: 4.5vw;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 0.8vw;
+    text-align: end;
+    margin-left: auto;
+    background: linear-gradient(
+        rgb(0, 135, 188),
+        rgb(169, 215, 255), 
+        rgb(77, 154, 231), 
+        rgb(51, 152, 240),
+        rgb(51, 152, 240),
+        rgb(51, 152, 240),
+        rgb(51, 152, 240), 
+        rgb(51, 152, 240));
+    padding-top: 0.8vw;
+    border-left: 2px solid #77b1d5;
+    padding-right: 0.7vw;
 }
